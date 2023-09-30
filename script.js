@@ -47,3 +47,13 @@ product2
     .catch((error) => {
         console.error(error)
     });
+
+const product3 = new DiscountedProduct(3, 'Шуба', 500, false, 15);
+product3
+    .getDiscountedPrice()
+    .then((discountedPrice) => {
+        console.log(`Ціна зі знижкою: $${discountedPrice}`);
+    })
+    .catch((error) => {
+        console.error(error)
+    });
